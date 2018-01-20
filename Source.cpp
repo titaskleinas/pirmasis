@@ -4,8 +4,8 @@
 
 using namespace std;
 
-const char fd[]="gaminiai.txt";
-const char fr[]="rezultatai.txt";
+const char fd[]="gaminii.txt";
+const char fr[]="rezultati.txt";
 
 void ivedimas(int &n);
 void gaminiai(int n, int &mil, int &cukr);
@@ -27,6 +27,21 @@ int main()
 	ivedimas(n);
 	gaminiai(n, mil, cukr);
 	spausdinimas(mil, cukr, n);
+cout <<"   ___ ___         .__  .__                               .__       .___ "<<endl;
+cout <<"  /   |   \   ____ |  | |  |   ____   __  _  _____________|  |    __| _/ "<<endl;
+cout <<" /    ~    \_/ __ \|  | |  |  /  _ \  \ \/ \/ /  _ \_  __ \  |   / __ |  "<<endl;
+cout <<" \    Y    /\  ___/|  |_|  |_(  <_> )  \     (  <_> )  | \/  |__/ /_/ |  "<<endl;
+cout <<"  \___|_  /  \___  >____/____/\____/    \/\_/ \____/|__|  |____/\____ |  "<<endl;
+cout <<"        \/       \/                                                  \/  "<<endl;
+
+cout <<" _____.___.                              __    .__                   __              .___"<<endl;
+cout <<" \__  |   | ____  __ __     ____   _____/  |_  |  |__ _____    ____ |  | __ ____   __| _/"<<endl;
+cout <<"  /   |   |/  _ \|  |  \   / ___\ /  _ \   __\ |  |  \\__  \ _/ ___\|  |/ // __ \ / __ | "<<endl;
+cout <<"  \____   (  <_> )  |  /  / /_/  >  <_> )  |   |   Y  \/ __ \\  \___|    <\  ___// /_/ | "<<endl;
+cout <<"  / ______|\____/|____/   \___  / \____/|__|   |___|  (____  /\___  >__|_ \\___  >____ | "<<endl;
+cout <<"  \/                     /_____/                    \/     \/     \/     \/    \/     \/ "<<endl;
+
+
 	return 0;
 }
 
@@ -48,7 +63,7 @@ void ivedimas(int &n)
 			mas[i].pav=mas[i].pav+pav1;
 			if (pav1[pav1.length()-1] == '"')
 			{
-				x=0;
+				x=1;
 				mas[i].pav.erase(mas[i].pav.length()-1, 1);
 			}
 			else
@@ -68,7 +83,7 @@ void gaminiai(int n, int &mil, int &cukr)
 {
 	string pav2;
 	int kiek;
-	kiek=2;
+	kiek=3;
 	for (int i = 0; i < kiek; i++)
 	{
 		cout << "iveskite gaminio pavadinima:" << endl;
@@ -102,7 +117,7 @@ void spausdinimas(int mil, int cukr, int n)
 	r << endl;
 
 	r << "miltu reiks: " << mil << endl;
-	r << "cukraus reiks: " << cukr << endl;
+	r << "cukrus reiks: " << cukr << endl;
 
 
 }
